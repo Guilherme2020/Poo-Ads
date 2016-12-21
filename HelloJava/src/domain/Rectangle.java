@@ -6,7 +6,7 @@ public class Rectangle {
 	 public double height;
 	 //Composicao
 	 
-	 Point ponto = new Point();
+	 public Point ponto = new Point();
 	
 
 	 public double area(){

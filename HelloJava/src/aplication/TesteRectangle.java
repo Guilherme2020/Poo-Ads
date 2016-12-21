@@ -11,6 +11,7 @@ public class TesteRectangle {
 		Point  ponto = new Point();
 		
 		
+		
 		rectangle.witdh  = 14.6;
 		rectangle.height = 8.5;
 		
@@ -20,7 +21,7 @@ public class TesteRectangle {
 		String resultEstaCondido = rectangle.EstaContido(rectangle);
 		
 		String result = "Area = " + rectangle.area();
-		
+		String resultPerimetro = "Perimetro = "+ rectangle.perimetro();
 		String resultAmpliar = "Ampliar = " +rectangle.ampliar(10);
 		
 		String resultReduzir = "Reduzir = "+rectangle.reduzir(5);
@@ -29,6 +30,7 @@ public class TesteRectangle {
 		System.out.println("O retangulo ampliado eh = "+resultAmpliar);
 		System.out.println("O retangulo reduzido eh = "+resultReduzir);
 		System.out.println("Esta contido = "+resultEstaCondido);
+		System.out.println("PERIMETRO = "+resultPerimetro);
 	
 		
 	
