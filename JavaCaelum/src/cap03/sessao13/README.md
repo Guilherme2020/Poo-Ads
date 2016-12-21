@@ -1,5 +1,5 @@
-
-5. valores como 20,30,40
+QUESTAO 5
+. valores como 20,30,40
  porque mudar a variavel fatorial de int para long?
 Pelo fato do calculo de fatorial ser trabalhoso por crescer muito  tipos primitivos do tipo int so armazenam de -2.147.483.648 até o máximo 2.147.483.647
 
