@@ -8,15 +8,20 @@ public class TesteRectangle {
 		// TODO Auto-generated method stub
 
 		Rectangle rectangle = new Rectangle();
-		Point  ponto = new Point();
+		
+		rectangle.ponto = new Point();
+		
+		
 		
 		
 		
 		rectangle.witdh  = 14.6;
 		rectangle.height = 8.5;
 		
-		ponto.pontoY = 20;
-		ponto.pontoX = 15;
+		
+		
+		rectangle.ponto.pontoY = 20;
+		rectangle.ponto.pontoX = 15;
 		
 		String resultEstaCondido = rectangle.EstaContido(rectangle);
 		
@@ -29,7 +34,7 @@ public class TesteRectangle {
 		System.out.println("O reslutado da area do retangulo eh "+result);
 		System.out.println("O retangulo ampliado eh = "+resultAmpliar);
 		System.out.println("O retangulo reduzido eh = "+resultReduzir);
-		System.out.println("Esta contido = "+resultEstaCondido);
+		System.out.println("Esta contido? = "+resultEstaCondido);
 		System.out.println("PERIMETRO = "+resultPerimetro);
 	
 		

@@ -2,8 +2,8 @@ package domain;
 
 public class Point {
 
-	public  int pontoX;
-	public  int pontoY;
+	public double pontoX;
+	public double pontoY;
 	
 //	public double definirPonto(){
 //		
