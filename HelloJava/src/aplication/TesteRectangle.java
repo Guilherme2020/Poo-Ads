@@ -18,7 +18,7 @@ public class TesteRectangle {
 		ponto.pontoX = 20;
 		
 		//Error  de Null
-		//String resultEstaCondido = rectangle.EstaContido(rectangle);
+		String resultEstaCondido = rectangle.EstaContido(rectangle);
 		
 		String result = "Area = " + rectangle.area();
 		
@@ -29,7 +29,7 @@ public class TesteRectangle {
 		System.out.println("O reslutado da area do retangulo eh "+result);
 		System.out.println("O retangulo ampliado eh = "+resultAmpliar);
 		System.out.println("O retangulo reduzido eh = "+resultReduzir);
-		//System.out.println("Esta contido = "+resultEstaCondido);
+		System.out.println("Esta contido = "+resultEstaCondido);
 	
 		
 	

@@ -5,7 +5,8 @@ public class Rectangle {
 	 public double witdh;
 	 public double height;
 	 //Composicao
-	 Point ponto;
+	 
+	 Point ponto = new Point();
 	
 
 	 public double area(){
@@ -30,7 +31,7 @@ public class Rectangle {
 	        }
 		 return "Nao esta condido";
 	 }
-	 
+	 //
 	 
 	
 
