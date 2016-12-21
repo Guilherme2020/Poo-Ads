@@ -8,22 +8,25 @@ public class TesteRectangle {
 		// TODO Auto-generated method stub
 
 		Rectangle rectangle = new Rectangle();
+		Rectangle rectangle2 = new Rectangle();
+		
 		
 		rectangle.ponto = new Point();
-		
-		
-		
-		
-		
+		rectangle2.ponto = new Point(); 
 		rectangle.witdh  = 14.6;
 		rectangle.height = 8.5;
-		
-		
+		rectangle2.witdh =15 ;
+		rectangle2.height = 13;
 		
 		rectangle.ponto.pontoY = 20;
 		rectangle.ponto.pontoX = 15;
 		
-		String resultEstaCondido = rectangle.EstaContido(rectangle);
+		rectangle2.ponto.pontoY = 10;
+		rectangle2.ponto.pontoX = 12;
+		
+		
+		
+		String resultEstaCondido = rectangle.EstaContido(rectangle2);
 		
 		String result = "Area = " + rectangle.area();
 		String resultPerimetro = "Perimetro = "+ rectangle.perimetro();
