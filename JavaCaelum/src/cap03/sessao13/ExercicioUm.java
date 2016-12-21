@@ -7,16 +7,7 @@ public class ExercicioUm {
 		for (int i = 150; i < 300; i++) {
 			System.out.println(i);
 		}
-		
-		
-		
-		
-		
-		
-		
-	
-		
-		
+				
 	}
 	
 	
