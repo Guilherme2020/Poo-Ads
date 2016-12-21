@@ -15,9 +15,8 @@ public class TesteRectangle {
 		rectangle.height = 8.5;
 		
 		ponto.pontoY = 20;
-		ponto.pontoX = 20;
+		ponto.pontoX = 15;
 		
-		//Error  de Null
 		String resultEstaCondido = rectangle.EstaContido(rectangle);
 		
 		String result = "Area = " + rectangle.area();

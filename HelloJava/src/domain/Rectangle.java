@@ -21,7 +21,6 @@ public class Rectangle {
 
 	 
 	 
-	 // Esse metodo esta errado n sei pq kk
 	 
 	 public String EstaContido(Rectangle rectangle){
 		 if(Math.sqrt(Math.pow(rectangle.ponto.pontoX - (ponto.pontoX + witdh),2)) <= Math.sqrt(Math.pow(ponto.pontoX - (ponto.pontoX + witdh),2))){
