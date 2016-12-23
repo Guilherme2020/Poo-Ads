@@ -15,11 +15,17 @@ public class QuestaoTres {
 			String login = JOptionPane.showInputDialog("Insira o login");
 			String senha = JOptionPane.showInputDialog("Insira a Senha");
 			
-			if(login == loginOriginal && senha == senhaOriginal){
+			if(login.equals(loginOriginal) && senha.equals(senhaOriginal)){
 				JOptionPane.showMessageDialog(null, "SEja bem vindo");
 				break;
 			}else{
-				JOptionPane.showMessageDialog(null, "Falha no logiin \n "+"Voce tem mais "+(3-contador)+"Tentativa!");
+				contador++;
+				if(contador == 3){
+					JOptionPane.showMessageDialog(null,"Suas chances acabaram");
+				}else{
+					JOptionPane.showMessageDialog(null, "Falha no logiin \n "+"Voce tem mais "+ (3 - contador) +"Tentativa!");
+
+				}
 			}
 			
 		}

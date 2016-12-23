@@ -42,8 +42,8 @@ public class QuestaoDois {
 				maior = numeroQuatro;
 			}
 			
-			JOptionPane.showMessageDialog(null, "Resistencias: \n "+resistenciaUm+resistenciaDois+resistenciaTres+resistenciaQuatro
-					+"\nA maior resistencia eh "+maior+"A menor resistencia eh "+menor);
+			JOptionPane.showMessageDialog(null, "Resistencias: \n "+resistenciaUm+"\n"+resistenciaDois+"\n"+resistenciaTres+"\n"+resistenciaQuatro
+					+"\nA maior resistencia eh "+maior+"\nA menor resistencia eh "+menor);
 			
 		}catch(NumberFormatException error){
 			JOptionPane.showMessageDialog(null, "Digite valores validos");

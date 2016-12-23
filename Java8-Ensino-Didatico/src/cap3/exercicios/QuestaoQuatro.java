@@ -10,8 +10,8 @@ public class QuestaoQuatro {
 		
 		String espaco = "";
 		
-		for (int i = 0; i < 10; i++) {
-			espaco += (numero + "x"+ i + "="+(numero+i)+"\n");
+		for (int i = 1; i <= 10; i++) {
+			espaco += (numero + "x"+ i + " = "+(numero*i)+"\n");
 		}
 		JOptionPane.showMessageDialog(null, espaco);
 	}
