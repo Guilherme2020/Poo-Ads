@@ -15,6 +15,9 @@ public class QuestaoDois {
 		int numeroMes = (int) (Math.random()*12);
 		
 		JOptionPane.showMessageDialog(null, "O mes sorteado foi : "+meses[numeroMes]);
+	
+	
+	
 	}
 
 }
