@@ -15,6 +15,7 @@ public class QuestaoDois {
 		Scanner campeonato =  new Scanner(System.in);
 		pontoDoTimeLider = campeonato.nextInt();
 		
+		
 		System.out.println("Digite a quantidade pontos do Lanterna");
 		campeonato = new Scanner(System.in);
 		pontoDoTimeLanterna = campeonato.nextInt();
