@@ -16,8 +16,10 @@ public class QuestaoCinco {
 				vagasDeCarro[i] = "livre";
 		}
 		
-		while(true) {
-			String opcao = JOptionPane.showInputDialog("Escolha a opcao"
+		String opcao = "";
+		while(opcao != "4") {
+			 
+			opcao = JOptionPane.showInputDialog("Escolha a opcao"
 					+ "\n1 - Entre com os Veiculos"
 					+ "\n2 - Saida de veiculos"
 					+ "\n3 - Listar a situacao atual"
@@ -41,7 +43,7 @@ public class QuestaoCinco {
 				vagasDeCarro[numero-1] = "livre";
 			}else if(opcao.equals("3")){
 				for (int i = 0; i < 10; i++) {
-					JOptionPane.showMessageDialog(null,"Vaga: "+(i+1)+vagasDeCarro[i]);
+					JOptionPane.showMessageDialog(null,"Vaga: "+(i+1)+" => "+vagasDeCarro[i]);
 				}
 			}else if(opcao.equals("4")){
 				JOptionPane.showMessageDialog(null,"Saiu");
