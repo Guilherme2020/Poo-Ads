@@ -1,6 +1,6 @@
 package cap02.sessao17;
 
-public class MeuPrograma {
+public class OutroPrograma {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
