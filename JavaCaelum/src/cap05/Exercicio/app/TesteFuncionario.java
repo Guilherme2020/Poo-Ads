@@ -29,18 +29,18 @@ public class TesteFuncionario {
 	        System.out.println("\nContém o funcionario 5? : " + Java.contem(Urias));
 	        System.out.println("Contém o funcionario 13? : " + Java.contem(Davi));
 	        
-	        Funcionario[] empregados2 = new Funcionario[11];
+	        Funcionario[] empregadosDois = new Funcionario[11];
 	        
 	        for(int i=0 ; i < Java.empregados.length ; i++){
-	            empregados2[i] = Java.empregados[i];
+	            empregadosDois[i] = Java.empregados[i];
+	            
 	        }
-	        
-	        empregados2[10] = Davi;
+	        empregadosDois[10] = Davi;
 
 	        System.out.println("\nContém o funcionario 11? : " + Java.contem(Davi));
 	        
-	        for(int i=0 ; i < empregados2.length ; i++){
-	            empregados2[i].mostra();
+	        for(int i=0 ; i < empregadosDois.length ; i++){
+	            empregadosDois[i].mostra();
 	        }
 	        
 

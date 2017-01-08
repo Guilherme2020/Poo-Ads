@@ -1,4 +1,4 @@
-package cap04.app;
+package cap04.domain;
 
 public class Cliente {
 	String nome;

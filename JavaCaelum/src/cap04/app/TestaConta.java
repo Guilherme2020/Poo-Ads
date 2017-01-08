@@ -1,7 +1,8 @@
-package cap04.domain;
+package cap04.app;
 
-import cap04.app.Conta;
-import cap04.app.Cliente;
+import cap04.domain.Cliente;
+import cap04.domain.Conta;
+
 public class TestaConta {
 
 	public static void main(String[] args) {
