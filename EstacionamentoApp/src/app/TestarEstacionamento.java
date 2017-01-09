@@ -12,7 +12,9 @@ public class TestarEstacionamento {
 		Estacionamento park2 = Estacionamento.getInstance();
 		
 		park.registrarEntrada(new Veiculo("as313","Gool"));
-		park2.registrarEntrada(new Veiculo("as3131","Ford"));
+		//park2.registrarEntrada(new Veiculo("as3131","Ford"));
+		
+		//park.saidaVeiculo("as3131");
 		park.estadoAtual();
 		
 		

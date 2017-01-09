@@ -40,18 +40,30 @@ public class Estacionamento {
 		 return Estacionamento.instancia;	 
 	  }
 	
-	  public void validarEntrada(){
-		  
-	  }
+//	  public boolean validarEntrada(Veiculo veiculo){
+//		//TODO
+//          if (!contem(veiculo.getPlaca())){
+//                  //Faz a entrada de fato
+//                  this.vagas[posicao++] = veiculo;
+//                  return true;
+//          }else {
+//                  //Veiculo já estacionado.
+//                  return false;
+//          }
+//
+//	  }
 	  
 	  
 	  public void registrarEntrada(Veiculo veiculo){
-		   	  
-		  this.vagas[posicao] = veiculo;	
+		    
+		  	this.vagas[posicao] = veiculo;
+		  	posicao++;
 		  
-		  posicao++;
 		  
-	  }
+	  }	  
+		  
+		  
+	  //}
 	  public Veiculo getPosicao(int i) throws IndexOutOfBoundsException{
 		  return this.vagas[i-1];
 	  }
@@ -82,7 +94,7 @@ public class Estacionamento {
 
 	 public void estadoAtual(){
 	 		for (int i = 0; i < vagas.length; i++) {
-				System.out.println("Vagas> "+getVagas()[i]+"");
+				System.out.println((i+1)+"Vaga>"+""+getVagas()[i]+"");
 			}
 	  }
 	  @Override
