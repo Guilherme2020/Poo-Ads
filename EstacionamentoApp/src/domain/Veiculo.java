@@ -29,7 +29,8 @@ public class Veiculo {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return this.placa;
+		return "Placa-> "+this.placa+" Nome-> "+this.nome;
+		
 	}
 	
 	

@@ -82,7 +82,7 @@ public class Estacionamento {
 
 	 public void estadoAtual(){
 	 		for (int i = 0; i < vagas.length; i++) {
-				System.out.println("Vagas> "+vagas[i]);
+				System.out.println("Vagas> "+getVagas()[i]+"");
 			}
 	  }
 	  @Override
