@@ -1,11 +1,12 @@
 package domain;
+import domain.Veiculo;
 
 public class Estacionamento {
 
 	  
 	  private static Estacionamento instancia;
 	  
-	  private int pos = 0;
+	  private int posicao = 0;
 	  private String nome;
 	  
 	  private Veiculo[] vagas;
@@ -39,24 +40,36 @@ public class Estacionamento {
 		 return Estacionamento.instancia;	 
 	  }
 	
+	  public void validarEntrada(){
+		  
+	  }
 	  
-	  public boolean Entrada(Veiculo veiculo){
-	//	  
-		  if(!contem(veiculo.getPlaca())){ 
-			  vagas[pos++] = veiculo;
-			  return true;
-		  }else{
-			  return false;
-		  }
+	  
+	  public void registrarEntrada(Veiculo veiculo){
+		   	  
+		  this.vagas[posicao] = veiculo;	
+		  
+		  posicao++;
+		  
 	  }
-	 
-	  public boolean saidaVeiculo(String placa){
+	  public Veiculo getPosicao(int i) throws IndexOutOfBoundsException{
+		  return this.vagas[i-1];
+	  }
+	  public void saidaVeiculo(String placa){
 		  if(contem(placa)){
-			  //Procurar a posicao e torna null;
-			  return true;
+			  for (int i = 0; i < vagas.length; i++) {
+				  String varPlaca = vagas[i].getPlaca();
+				  if(varPlaca.equals(placa)){
+					  vagas[i] = null;
+					  System.out.println("deu certo");
+				  }
+			  }
+		  }else{
+			  System.out.println("nao existe veiculos");
 		  }
-		  return false;
 	  }
+		  
+	  
 	  
 	  private boolean contem(String placa){
 		  for (Veiculo veiculo : vagas) {
@@ -66,11 +79,17 @@ public class Estacionamento {
 		  }
 		  return false;
 	  }
+
+	 public void estadoAtual(){
+	 		for (int i = 0; i < vagas.length; i++) {
+				System.out.println("Vagas> "+vagas[i]);
+			}
+	  }
 	  @Override
 	  public String toString(){
 		  
 		  return this.nome;
 	  }
-	  
+	  	
 
 }

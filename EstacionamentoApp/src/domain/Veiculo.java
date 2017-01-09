@@ -7,13 +7,13 @@ public class Veiculo {
 	
 	
 	private String placa;
-	private String modelo;
+	private String nome;
 	
 	
 	
-	public Veiculo(String placa,String modelo){
+	public Veiculo(String placa,String nome){
 		this.placa = placa;
-		this.modelo = modelo;
+		this.nome = nome;
 	}
 	
 	
@@ -21,8 +21,8 @@ public class Veiculo {
 		return placa;
 	}
 	
-	public String getModelo() {
-		return modelo;
+	public String getNome() {
+		return nome;
 	}
 	
 	
