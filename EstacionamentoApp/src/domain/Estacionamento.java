@@ -56,10 +56,19 @@ public class Estacionamento {
 	  
 	  
 	  public void registrarEntrada(Veiculo veiculo){
-		    
-		  	this.vagas[getPosicao()] = veiculo;
-		  	
+		    for (int i = 0; i < vagas.length; i++) {
+		    	if(this.vagas[i] == null){
+		    		this.vagas[getPosicao()] = veiculo;
+		    		break;
+		    	}else{
+		    		if(this.vagas[getPosicao()] != null){
+		    			System.out.println("loto");
+		    			break;
+		    		}
 		  
+		    	}
+			}
+		    
 		  
 	  }	  
 		  
@@ -82,7 +91,7 @@ public class Estacionamento {
 					  String varPlaca = vagas[i].getPlaca();
 					  if(varPlaca.equals(placa)){
 						  vagas[i] = null;
-						  System.out.println("deu certo");
+						  System.out.println("deu certo - V");
 					  }  
 				  }
 				  
