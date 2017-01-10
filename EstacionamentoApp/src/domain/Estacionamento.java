@@ -1,4 +1,6 @@
 package domain;
+import javax.swing.JOptionPane;
+
 import domain.Veiculo;
 
 public class Estacionamento {
@@ -67,7 +69,7 @@ public class Estacionamento {
 	  public Veiculo getPosicao(int i) throws IndexOutOfBoundsException{
 		  return this.vagas[i-1];
 	  }
-	  public void saidaVeiculo(String placa){
+	  public void saidaVeiculo(String placa)  throws  IndexOutOfBoundsException{
 		  if(contem(placa)){
 			  for (int i = 0; i < vagas.length; i++) {
 				  String varPlaca = vagas[i].getPlaca();
@@ -76,8 +78,6 @@ public class Estacionamento {
 					  System.out.println("deu certo");
 				  }
 			  }
-		  }else{
-			  System.out.println("nao existe veiculos");
 		  }
 	  }
 		  
@@ -94,7 +94,7 @@ public class Estacionamento {
 
 	 public void estadoAtual(){
 	 		for (int i = 0; i < vagas.length; i++) {
-				System.out.println((i+1)+"Vaga>"+""+getVagas()[i]+"");
+				JOptionPane.showMessageDialog(null,((i+1)+"Vaga>"+""+getVagas()[i]+""));
 			}
 	  }
 	  @Override

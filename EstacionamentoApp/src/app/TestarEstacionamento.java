@@ -1,49 +1,58 @@
 package app;
+
 import javax.swing.JOptionPane;
 
-import domain.Estacionamento;
-import domain.Veiculo;
+import domain.*;
 public class TestarEstacionamento {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		
+		
 		Estacionamento park = Estacionamento.getInstance();
-		Estacionamento park2 = Estacionamento.getInstance();
-		
-		park.registrarEntrada(new Veiculo("as313","Gool"));
-		//park2.registrarEntrada(new Veiculo("as3131","Ford"));
-		
-		//park.saidaVeiculo("as3131");
-		park.estadoAtual();
+
 		
 		
-		
-		
-		
-		
-//		int op = 4;
-//		
-//		while(op != 4 ){
-//			 String janela =  JOptionPane.showInputDialog("Escolha a opcao"
-//						+ "\n1 - Entre com os Veiculos"
-//						+ "\n2 - Saida de veiculos"
-//						+ "\n3 - Listar a situacao atual"
-//						+ "\n4 - Encerrar: "
-//						);
-//			if(janela.equal(1)){
-//				
-//			}
-//			 
-//			 
-//		}
-		
-		
-//		String op = JOptionPane.showInputDialog("Menu"
-//				+""
-//				+""
-//				+"");
-		
+		String opc = ""; 
+		while(opc != "4" ){
+			opc = JOptionPane.showInputDialog(
+					"Escolha a opcao"
+							+ "\n1 - Entre com os Veiculos"
+							+ "\n2 - Saida de veiculos"
+							+ "\n3 - Listar a situacao atual"
+							+ "\n4 - Encerrar: "
+					);
+			
+			switch (opc) {
+				case "1":
+					
+					String numeroPlaca =  JOptionPane.showInputDialog("Insira o numero da placa ");
+					String nomeVeiculo = JOptionPane.showInputDialog("Insira o nome do veiculo ");
+					
+					park.registrarEntrada(new Veiculo(numeroPlaca,nomeVeiculo));
+					break;
+						
+				case "2":
+					numeroPlaca =  JOptionPane.showInputDialog("Insira o numero da placa ");
+					
+					park.saidaVeiculo(numeroPlaca);
+					break;
+				case "3":
+					
+					park.estadoAtual();
+					break;
+				case "4":
+					break;
+				default:
+					if(opc == "4"){
+						break;
+					}
+					break;
+					
+			}			 
+	
+		}
 	}
 
 }
