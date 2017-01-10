@@ -15,7 +15,7 @@ public class TestarEstacionamento {
 		
 		
 		String opc = ""; 
-		while(opc != "4" ){
+		while(!"4".equals(opc)){
 			opc = JOptionPane.showInputDialog(
 					"Escolha a opcao"
 							+ "\n1 - Entre com os Veiculos"
@@ -43,11 +43,9 @@ public class TestarEstacionamento {
 					park.estadoAtual();
 					break;
 				case "4":
+					JOptionPane.showMessageDialog(null,"Obrigado,Volte Sempre");
 					break;
 				default:
-					if(opc == "4"){
-						break;
-					}
 					break;
 					
 			}			 
