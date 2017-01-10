@@ -8,7 +8,6 @@ public class Estacionamento {
 	  
 	  private static Estacionamento instancia;
 	  
-	  private int posicao = 0;
 	  private String nome;
 	  
 	  private Veiculo[] vagas;
@@ -58,25 +57,35 @@ public class Estacionamento {
 	  
 	  public void registrarEntrada(Veiculo veiculo){
 		    
-		  	this.vagas[posicao] = veiculo;
-		  	posicao++;
+		  	this.vagas[getPosicao()] = veiculo;
+		  	
 		  
 		  
 	  }	  
 		  
 		  
 	  //}
-	  public Veiculo getPosicao(int i) throws IndexOutOfBoundsException{
-		  return this.vagas[i-1];
+	  public int getPosicao() throws IndexOutOfBoundsException{
+		  int menorPosicao = 0;
+	        for(int i = 0; i < 10 ; i++){
+	            if(this.vagas[i] == null){
+	                return i;
+	            }
+	        }
+	        return menorPosicao;
 	  }
 	  public void saidaVeiculo(String placa)  throws  IndexOutOfBoundsException{
 		  if(contem(placa)){
 			  for (int i = 0; i < vagas.length; i++) {
-				  String varPlaca = vagas[i].getPlaca();
-				  if(varPlaca.equals(placa)){
-					  vagas[i] = null;
-					  System.out.println("deu certo");
+				  
+				  if(vagas[i] != null){
+					  String varPlaca = vagas[i].getPlaca();
+					  if(varPlaca.equals(placa)){
+						  vagas[i] = null;
+						  System.out.println("deu certo");
+					  }  
 				  }
+				  
 			  }
 		  }
 	  }
@@ -84,12 +93,14 @@ public class Estacionamento {
 	  
 	  
 	  private boolean contem(String placa){
-		  for (Veiculo veiculo : vagas) {
-			  if (veiculo.getPlaca().equals(placa)) {
-				 return true;
-			  }
-		  }
-		  return false;
+		  for (int i = 0; i < vagas.length; i++) {
+	            if(vagas[i] != null) {
+	                if (vagas[i].getPlaca().equals(placa)) {
+	                    return true;
+	                }
+	            }
+	        }
+	        return false;  
 	  }
 
 	 public void estadoAtual(){
