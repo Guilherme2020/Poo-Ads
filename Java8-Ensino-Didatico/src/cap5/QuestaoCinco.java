@@ -12,9 +12,7 @@ public class QuestaoCinco {
 			
 		int  x;
 		
-		for (int i = 0; i < 10; i++) {
-				vagasDeCarro[i] = "livre";
-		}
+		
 		
 		String opcao = "";
 		while(opcao != "4") {
@@ -29,15 +27,12 @@ public class QuestaoCinco {
 			if(opcao == null){
 				break;
 			}else if(opcao.equals("1")){
-				while(x==0){
+				
 					int numero = Integer.parseInt(JOptionPane.showInputDialog("Insira o numero da vaga"));
 					if(vagasDeCarro[numero].equals("livre")){
 						vagasDeCarro[numero] = JOptionPane.showInputDialog("Forneca a placa do veiculo");
-						x = 1;
-					}else{
-						JOptionPane.showMessageDialog(null,"Escolha outra vaga");
+						break;
 					}
-				}
 			}else if(opcao.equals("2")){
 				int numero = Integer.parseInt(JOptionPane.showInputDialog("Insira o numero da vaga para liberar"));
 				vagasDeCarro[numero] = "livre";
