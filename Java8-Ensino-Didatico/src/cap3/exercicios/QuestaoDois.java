@@ -1,24 +1,38 @@
 package cap3.exercicios;
 
 
-import javax.swing.JOptionPane;
+import java.io.IOException;
+import java.util.Scanner;
+
 
 public class QuestaoDois {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		int resistenciaUm,resistenciaDois,resistenciaTres,
+			maior,menor,resistenciaQuatro;
 		
-		String resistenciaUm = JOptionPane.showInputDialog("R1: "); 
-		String resistenciaDois = JOptionPane.showInputDialog("R2: "); 
-		String resistenciaTres = JOptionPane.showInputDialog("R3: "); 
-		String resistenciaQuatro = JOptionPane.showInputDialog("R4: "); 
-		
-		try{
-			int numeroUm = Integer.parseInt(resistenciaUm);
-			int numeroDois = Integer.parseInt(resistenciaDois);
-			int numeroTres  = Integer.parseInt(resistenciaTres);
-			int numeroQuatro = Integer.parseInt(resistenciaQuatro);
+			Scanner lerResUm = new Scanner(System.in);
+			Scanner lerResDois= new Scanner(System.in);
+			Scanner lerResTres = new Scanner(System.in);
+			Scanner lerResQuatro = new Scanner(System.in);
 			
-			int menor = numeroUm;
+			
+			
+			System.out.println(" Resistencia Um ");
+			resistenciaUm = lerResUm.nextInt();
+			System.out.println(" Resistencia Dois ");
+			resistenciaDois = lerResDois.nextInt();
+			System.out.println(" Resistencia Tres ");
+			resistenciaTres = lerResTres.nextInt();
+			System.out.println(" Resistencia Quatro ");
+			resistenciaQuatro = lerResQuatro.nextInt();
+				
+			int numeroUm = resistenciaUm;
+			int numeroDois = resistenciaDois;
+			int numeroTres  = resistenciaTres;
+			int numeroQuatro = resistenciaQuatro;
+			
+			 menor = numeroUm;
 			
 			if(numeroDois < menor){
 				menor = numeroDois;
@@ -30,7 +44,7 @@ public class QuestaoDois {
 				menor = numeroQuatro;
 			}
 			
-			int maior = numeroUm;
+			maior = numeroUm;
 			if(numeroDois > maior){
 				maior = numeroDois;
 			}
@@ -42,12 +56,10 @@ public class QuestaoDois {
 				maior = numeroQuatro;
 			}
 			
-			JOptionPane.showMessageDialog(null, "Resistencias: \n "+resistenciaUm+"\n"+resistenciaDois+"\n"+resistenciaTres+"\n"+resistenciaQuatro
+			System.out.println("Resistencias: \n "+resistenciaUm+"\n"+resistenciaDois+"\n"+resistenciaTres+"\n"+resistenciaQuatro
 					+"\nA maior resistencia eh "+maior+"\nA menor resistencia eh "+menor);
 			
-		}catch(NumberFormatException error){
-			JOptionPane.showMessageDialog(null, "Digite valores validos");
-		}
+		
 
 		
 	}

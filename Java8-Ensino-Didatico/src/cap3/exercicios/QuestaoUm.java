@@ -1,22 +1,29 @@
 package cap3.exercicios;
 
+import java.io.IOException;
+import java.util.Scanner;
+
 import javax.swing.JOptionPane;
 
 public class QuestaoUm {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[] args) throws IOException {
 		float valor,desconto = 0;
+		String nomeProd;
+		Scanner lerNomeProd = new Scanner(System.in);
+		Scanner valorProdu = new Scanner(System.in);
 		
 		
-		String nomeProd = JOptionPane.showInputDialog(null,"Digite aqui o nome do prod: ");
-		if(nomeProd != null){
-			String valorProduto = JOptionPane.showInputDialog("Digite o valor do prod ");
+		System.out.println("Insira o nome do produdto ");
+		nomeProd = lerNomeProd.next();
 		
-			if(valorProduto != null){
-				try{
-					valor = Float.parseFloat(valorProduto);				
-					String msg = "Valor do prod com desconto ";
+		
+		if(nomeProd != ""){
+			System.out.println("Digite o valor do produto ");
+			valor = valorProdu.nextFloat();
+			if(valor != 0){
+				
+					String msg = "Valor do produto com desconto ";
 					if(valor >= 50 && valor < 200){
 						
 						desconto += (valor*0.5);
@@ -27,15 +34,11 @@ public class QuestaoUm {
 					}else if(valor >= 1000){
 						desconto += (valor*0.8);
 					}else{
-						msg = ("Nao temos desconto para esse valor");
+						msg = "Nao temos desconto para esse valor";
 					}
 				
-					JOptionPane.showMessageDialog(null,"Nome do produto "+nomeProd+ "\nValor original R$: "+valor+"\n"+msg+desconto);
+					System.out.println("Nome do produto "+nomeProd+ "\nValor original R$: "+valor+"\n"+msg+desconto);
 				
-				}catch(NumberFormatException error){
-					JOptionPane.showMessageDialog(null, "Ocorreram erros numericos, por favor tente com valores aceitos. "+error.toString());
-					
-				}
 			}
 		
 		}

@@ -1,19 +1,26 @@
 package cap3.exercicios;
 
-import javax.swing.JOptionPane;
+import java.io.IOException;
+
+
+import java.util.Scanner;
+
 
 public class QuestaoQuatro {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero"));
+	public static void main(String[] args) throws IOException {
 		
-		String espaco = "";
+		int numeroFornecido,x=1;
+		Scanner lerNumeroFornecido = new Scanner(System.in);
 		
-		for (int i = 1; i <= 10; i++) {
-			espaco += (numero + "x"+ i + " = "+(numero*i)+"\n");
+		System.out.println("Digite o numero da tabuada ");
+		numeroFornecido = lerNumeroFornecido.nextInt();
+		
+		while(x <= 10){
+			System.out.println(+numeroFornecido+" * " + x);
+			x++;
 		}
-		JOptionPane.showMessageDialog(null, espaco);
+		
 	}
 
 }

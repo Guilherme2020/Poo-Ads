@@ -1,10 +1,12 @@
 package cap2;
 
+import java.io.IOException;
+
 import javax.swing.JOptionPane;
 
 public class QuestaoTres {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException{
 		// TODO Auto-generated method stub
 		
 		float valorTransacao,valorVenal,percentualImposto, valorImposto;
