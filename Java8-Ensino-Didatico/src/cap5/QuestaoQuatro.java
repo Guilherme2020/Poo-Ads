@@ -9,8 +9,8 @@ public class QuestaoQuatro {
 		int[] impar = new int[10];
 		int x = 0, y = 0;
 		
-		for (int i = 0; i < 10; i++) {
-			int num  = (int)(Math.random()*20)+1;
+		for (int i = 1; i < 10; i++) {
+			int num  = (int)(Math.random()*20);
 			if(num%2 == 0){
 				par[x] = num;
 				x++;

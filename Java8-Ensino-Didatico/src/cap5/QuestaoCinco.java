@@ -31,8 +31,8 @@ public class QuestaoCinco {
 			}else if(opcao.equals("1")){
 				while(x==0){
 					int numero = Integer.parseInt(JOptionPane.showInputDialog("Insira o numero da vaga"));
-					if(vagasDeCarro[numero-1].equals("livre")){
-						vagasDeCarro[numero - 1] = JOptionPane.showInputDialog("Forneca a placa do veiculo");
+					if(vagasDeCarro[numero].equals("livre")){
+						vagasDeCarro[numero] = JOptionPane.showInputDialog("Forneca a placa do veiculo");
 						x = 1;
 					}else{
 						JOptionPane.showMessageDialog(null,"Escolha outra vaga");
@@ -40,7 +40,7 @@ public class QuestaoCinco {
 				}
 			}else if(opcao.equals("2")){
 				int numero = Integer.parseInt(JOptionPane.showInputDialog("Insira o numero da vaga para liberar"));
-				vagasDeCarro[numero-1] = "livre";
+				vagasDeCarro[numero] = "livre";
 			}else if(opcao.equals("3")){
 				for (int i = 0; i < 10; i++) {
 					JOptionPane.showMessageDialog(null,"Vaga: "+(i+1)+" => "+vagasDeCarro[i]);
