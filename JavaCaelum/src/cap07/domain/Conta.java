@@ -1,6 +1,6 @@
 package cap07.domain;
 
-public class Conta {
+public   class Conta {
 
 	protected double saldo;
 	
