@@ -1,5 +1,5 @@
 package cap11.domain;
-
+import cap11.util.*;
 public  abstract class Conta {
 
 	protected double saldo;
@@ -13,9 +13,9 @@ public  abstract class Conta {
 	
 	public void deposita(double valor){
 		if (valor < 0) {
-			throw new IllegalArgumentException();
+			throw new ValorInvalidoException(valor);
 		}else{
-			this.saldo += valor;
+			this.saldo += valor - 10;
 
 		}
 	}
