@@ -1,4 +1,4 @@
-package cap09.domain;
+package cap10.Exercicios.interfaces.Conta.domain;
 
 public class ContaPoupanca extends Conta {
 

@@ -1,7 +1,7 @@
-package cap09.domain;
+package cap10.Exercicios.interfaces.Conta.domain;
 
 
-public class ContaCorrente extends Conta {
+public class ContaCorrente extends Conta implements Tributavel {
 
 	
 	
@@ -19,6 +19,11 @@ public class ContaCorrente extends Conta {
 	@Override
 	public void deposita(double valor){
 		this.saldo += valor - 0.10;
+	}
+
+	@Override
+	public double calculaTributos() {
+		return this.saldo * 0.01;
 	}
 	
 }
