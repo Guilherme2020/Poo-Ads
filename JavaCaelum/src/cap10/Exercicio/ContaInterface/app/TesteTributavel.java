@@ -8,12 +8,12 @@ public class TesteTributavel {
 		
 		
 		c.deposita(1000);
-		System.out.println(c.calculaTributos());
-		System.out.println("saldo"+c.getSaldo());
+		System.out.println("Valor de Tributos: "+c.calculaTributos());
+		System.out.println("saldo da conta "+c.getSaldo());
 		
-//		Tributavel t = c;
-//	
-//		System.out.println(t.calculaTributos());
-//	
+		Tributavel t = c;
+	
+		System.out.println(((ContaCorrente) t).getSaldo());
+	
 		}
 }

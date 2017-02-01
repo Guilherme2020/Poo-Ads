@@ -25,7 +25,7 @@ public class ContaCorrente implements ContaTributavel{
 
 	@Override
 	public double calculaTributos() {
-		return this.saldo*0.42;
+		return this.saldo*0.02;
 		
 	}
 
