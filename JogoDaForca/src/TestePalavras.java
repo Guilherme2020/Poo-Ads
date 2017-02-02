@@ -11,17 +11,18 @@ public class TestePalavras {
 		String lerPrimeiraPalavra,lerSegundaPalavra;
 		
 		int sorteioDoVector = (int)(Math.random()* vetorDePalavras.length);
-		System.out.println(sorteioDoVector);
 		
+		System.out.println(sorteioDoVector);
 		
 		System.out.println("Insira a primeira Palavra");
 		lerPrimeiraPalavra = new Scanner(System.in).next();
 		System.out.println("Insira a segunda Palavra");
 		lerSegundaPalavra = new Scanner(System.in).next();
 		
-		
 		for (int i = 0; i < sorteioDoVector; i++) {
-			
+			if (lerPrimeiraPalavra == vetorDePalavras[sorteioDoVector]) {
+				
+			}
 		}
 	
 	
