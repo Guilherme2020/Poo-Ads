@@ -12,7 +12,13 @@ public class TestePalavras {
 		
 		int sorteioDoVector = (int)(Math.random()* vetorDePalavras.length);
 		
-		System.out.println(sorteioDoVector);
+		System.out.print(sorteioDoVector+"\n");
+		
+		System.out.print(vetorDePalavras[sorteioDoVector]);
+		
+		
+		
+		
 		
 		System.out.println("Insira a primeira Palavra");
 		lerPrimeiraPalavra = new Scanner(System.in).next();
