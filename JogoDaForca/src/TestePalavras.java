@@ -24,11 +24,12 @@ public class TestePalavras {
 
 	private static int TamanhoDoVector(String[] vetorDePalavras) {
 	
-			int tamanho = 0;
+			int tamanhoDoVector = 0;
+			
 			for ( String i : vetorDePalavras) {
-				tamanho+=1;
+				tamanhoDoVector+=1;
 			}
-			return tamanho;
+			return tamanhoDoVector;
 		
 		
 	}
