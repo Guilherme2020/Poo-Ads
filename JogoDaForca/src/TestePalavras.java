@@ -10,7 +10,7 @@ public class TestePalavras {
 	public static void main(String[] args) {
 		
 //		String[] vetorDePalavras = {"Gordo","erico","aba","asa"};
-//		String lerPrimeiraPalavra,lerSegundaPalavra;
+		String lerPrimeiraPalavra,lerSegundaPalavra;
 //		
 //		int sorteioDoVector = (int)(Math.random()* vetorDePalavras.length);
 //		
@@ -19,15 +19,17 @@ public class TestePalavras {
 //		System.out.print(vetorDePalavras[sorteioDoVector]);
 //		
 		
-		List<String> palavras = Arrays.asList("oi","gordo");
+		Random random = new Random();
+		
+		List<String> palavras = Arrays.asList("oi","gordo","aba");
 		
 		
-		String palavraEscolhida = (int)palavras[Math.random()*2];
-//		
-//		System.out.println("\nInsira a primeira Palavra");
-//		lerPrimeiraPalavra = new Scanner(System.in).next();
-//		
-//		
+		String palavraEscolhida = palavras.get(random.nextInt(palavras.size()));
+		System.out.println(palavraEscolhida);
+		System.out.println("\nInsira a primeira Palavra");
+		lerPrimeiraPalavra = new Scanner(System.in).next();
+		
+		
 		
 		
 		System.out.println("Insira a segunda Palavra");
@@ -40,11 +42,11 @@ public class TestePalavras {
 		
 		
 		
-		for (int i = 0; i < vetorDePalavras.length; i++) {
-			if (lerPrimeiraPalavra == vetorDePalavras[sorte]) {
-				
-			}
-		}
+//		for (int i = 0; i < vetorDePalavras.length; i++) {
+//			if (lerPrimeiraPalavra == vetorDePalavras[sorte]) {
+//				
+//			}
+//		}
 	
 	
 	}
