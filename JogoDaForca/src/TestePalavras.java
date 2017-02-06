@@ -10,7 +10,7 @@ public class TestePalavras {
 	public static void main(String[] args) {
 		
 //		String[] vetorDePalavras = {"Gordo","erico","aba","asa"};
-		String lerPrimeiraPalavra,lerSegundaPalavra;
+		String lerPrimeiraLetra,lerSegundaPalavra;
 //		
 //		int sorteioDoVector = (int)(Math.random()* vetorDePalavras.length);
 //		
@@ -27,8 +27,14 @@ public class TestePalavras {
 		String palavraEscolhida = palavras.get(random.nextInt(palavras.size()));
 		System.out.println(palavraEscolhida);
 		System.out.println("\nInsira a primeira Palavra");
-		lerPrimeiraPalavra = new Scanner(System.in).next();
+		lerPrimeiraLetra = new Scanner(System.in).next();
 		
+		if(lerPrimeiraLetra == palavraEscolhida){
+			System.out.println("-O-");
+			System.out.println("Voce acertou");
+		
+		
+		}
 		
 		
 		
