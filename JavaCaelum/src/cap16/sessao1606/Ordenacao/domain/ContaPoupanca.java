@@ -17,23 +17,23 @@ public class ContaPoupanca extends Conta implements Comparable<ContaPoupanca>{
 	}
 	
 	
-//	@Override
-//	public int compareTo(ContaPoupanca o) {
-//		
-//		if(this.getNumero() < o.getNumero()){
-//			return -1;
-//		}if(this.getNumero() > o.getNumero()){
-//			return 1;
-//		}
-//		return 0;
-//		// return Integer.compare(this.getNumero(), outra.getNumero()); Anyway
-//	}
-//   
-//	Outra forma
 	@Override
-	public int compareTo(ContaPoupanca outra){
-		return this.getNomeCliente().compareToIgnoreCase(outra.getNomeCliente());
+	public int compareTo(ContaPoupanca o) {
+	
+		if(this.getNumero() < o.getNumero()){
+			return -1;
+		}if(this.getNumero() > o.getNumero()){
+			return 1;
+		}
+		return 0;
+		// return Integer.compare(this.getNumero(), outra.getNumero()); Anyway
 	}
+   
+//	Outra forma
+//	@Override
+//	public int compareTo(ContaPoupanca outra){
+//		return this.getNomeCliente().compareToIgnoreCase(outra.getNomeCliente());
+//	}
 		// Essa forma er pra ser String
 	
 	@Override

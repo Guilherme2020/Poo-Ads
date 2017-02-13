@@ -10,6 +10,7 @@ public class TestaOrdenacao {
 		//List<ContaPoupanca> contas = new ArrayList<>();
 		ContaPoupanca contaUm = new ContaPoupanca();
 		contaUm.setNumero(1997);
+	
 		contas.add(contaUm);
 		
 		
@@ -28,14 +29,14 @@ public class TestaOrdenacao {
 	//	Collections.rotate(contas, 2); // rotacionar os elementos da lista
 		
 		System.out.println(contas);
-		for (int i = 0; i < contas.size(); i++) {
+		/*for (int i = 0; i < contas.size(); i++) {
 			Random randind = new Random();
 			int numeroContas = randind.nextInt()*1;
 			ContaPoupanca contaPoupancaAleatoria = new ContaPoupanca();
 			contaPoupancaAleatoria.setNumero(numeroContas);
 			contas.add(contaPoupancaAleatoria);
 			System.out.println("numeros aleatorios: "+contas.get(i).getNumero());
-		}
+		}*/
 		
 		for(int i = 0; i< contas.size();i++){
 			//Conta atual = contas.get(i); Uma forma
