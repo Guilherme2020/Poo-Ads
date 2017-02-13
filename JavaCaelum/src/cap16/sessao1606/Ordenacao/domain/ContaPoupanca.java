@@ -34,7 +34,7 @@ public class ContaPoupanca extends Conta implements Comparable<ContaPoupanca>{
 	public int compareTo(ContaPoupanca outra){
 		return this.getNomeCliente().compareToIgnoreCase(outra.getNomeCliente());
 	}
-		
+		// Essa forma er pra ser String
 	
 	@Override
 	public void atualiza(double taxa) {
