@@ -6,6 +6,10 @@ public  abstract class  Conta {
 	protected double saldo; 
 	protected String titular;	
 	
+	
+	public String getTitular() {
+		return titular;
+	}
 	public int getNumero() {
 		return numero;
 	}

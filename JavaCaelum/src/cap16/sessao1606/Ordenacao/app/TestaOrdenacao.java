@@ -27,7 +27,7 @@ public class TestaOrdenacao {
 	//	Collections.shuffle(contas); // embaralhar os elementos da lista
 	//	Collections.rotate(contas, 2); // rotacionar os elementos da lista
 		
-		
+		System.out.println(contas);
 		for (int i = 0; i < contas.size(); i++) {
 			Random randind = new Random();
 			int numeroContas = randind.nextInt()*1;
