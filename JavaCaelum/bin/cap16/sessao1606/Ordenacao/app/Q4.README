@@ -1,6 +1,0 @@
-
-
-
-4. Não.O que teria acontecido se a classe ContaPoupanca não implementasse
-Quando retiramos o implements  implements Comparable<ContaPoupanca> temos por obrigação 
-implementar esse metodo na classe Pai no caso Conta.

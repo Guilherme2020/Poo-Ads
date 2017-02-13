@@ -11,6 +11,7 @@ public class ContaPoupanca extends Conta implements Comparable<ContaPoupanca> {
 			return 1;
 		}
 		return 0;
+		// return Integer.compare(this.getNumero(), outra.getNumero()); Anyway
 	}
 
 	@Override

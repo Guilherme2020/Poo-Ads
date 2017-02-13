@@ -1,0 +1,13 @@
+
+
+
+4. Não.O que teria acontecido se a classe ContaPoupanca não implementasse
+Quando retiramos o implements  implements Comparable<ContaPoupanca> temos por obrigação 
+implementar esse metodo na classe Pai no caso Conta.
+
+5.A implementação mais utilizada da interface List é a ArrayList, 
+que trabalha com um array interno para gerar uma lista. Portanto, ela é mais rápida na pesquisa 
+do que sua concorrente, a LinkedList, que é mais rápida na inserção e remoção de itens nas pontas.
+	Quando rodamos alteramos de ArrayList para LinkedList não é necessario alterar mais nada 
+	
+
