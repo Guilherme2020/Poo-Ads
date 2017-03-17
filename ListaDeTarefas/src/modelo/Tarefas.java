@@ -7,14 +7,15 @@ import java.sql.Date;
  *
  */
 public class Tarefas {
-	private String descricao;
+	private String nome;
 	private double prioridade;
 	private Date dataLimite;
 	private String detalhes;
 	
 	
+	
 	public Tarefas(String descricao,double prioridade,Date dataLimite,String detalhes){
-		this.descricao = descricao;
+		this.nome = descricao;
 		this.prioridade = prioridade;
 		this.dataLimite = dataLimite;
 		this.detalhes = detalhes;
@@ -23,12 +24,12 @@ public class Tarefas {
 
 
 	public String getDescricao() {
-		return descricao;
+		return nome;
 	}
 
 
 	public void setDescricao(String descricao) {
-		this.descricao = descricao;
+		this.nome = descricao;
 	}
 
 
@@ -60,6 +61,9 @@ public class Tarefas {
 	public void setDetalhes(String detalhes) {
 		this.detalhes = detalhes;
 	}
+
+
+	
 	
 	
 	
